@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import {
   NotificationContainer,
@@ -145,9 +146,12 @@ const LoginTeacherPage = () => {
         </form>
         <div className="mt-4 text-sm text-center">
           <p>Don't have an account? </p>
-          <a href="/teacher-register" className="text-blue-500 hover:underline">
+           <Link
+            to="/teacher-register"
+            className="text-blue-500 hover:underline"
+          >
             <p>Create a free account.</p>
-          </a>
+          </Link>
         </div>
       </div>
       <NotificationContainer />
